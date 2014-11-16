@@ -61,7 +61,13 @@ body {
 	color: #fff;
 	text-shadow: none;
 }
-
+.reveal img
+{
+	background: none;
+border: none;
+box-shadow: none;
+-webkit-transition: none;
+}
 
 /*********************************************
  * HEADERS
