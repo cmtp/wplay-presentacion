@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>¿Donde Jugamos?</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="marcelo" >
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<section>
+						<h2>La Vida Real....</h2>
+						<p align="justify">
+							-Hola!! Vamos a jugar Raquet<br>
+							-Si!! claro, ¿Donde?<br>
+							-Oye ps no se..<br>
+							-Yo conozco una pero siempre esta lleno..<br>
+							-si yo igual conozco una pero siempre esta lleno..<br>
+							-Bueno tendra que ser en otra ocasión..<br>
+							-Bueno.. nos vemos.. te aviso si logro reservar algun Raquet disponible..
+						</p>
+					</section>
+					<section>
+						<h2>La siguiente ocasión.....</h2>
+						<p align="justify">
+							-Hola!! como es ¿lograste reservar una cancha de Raquet??<br>
+							-No!!! fui pero ya estaba todo reservado!!!<br>
+						</p>
+						<img src="img/graciosa1.jpg" alt="graciosa1.jpg">
+					</section>
+				</section>
+				<section>
+					<h1>Yo tengo una solución!!</h1>
+					<img src="img/idea.png">
+				</section>
+
+				<section>
+					<section>
+						<img width="300" height="100" src="img/wplay.png">
+						<h2>Where by play?</h2>
+						<h3>¿Donde Jugamos?</h3>
+					</section>
+					<section>
+					<p>
+						Podemos instalar un unico tema en el sitio o varios temas.
+					</p>
+					<img width="700" height="350" src="img/img5.png" alt="img5">
+					</section>
+					<section>
+						<p>
+						Cambiando un tema por otro es posible modificar el aspecto completo de la web, sin cambiar con ello las funcionalidades implementadas y los contenidos creados.
+						</p>
+						<img width="700" height="350" src="img/img6.png" alt="img6">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Como Instalar un tema</h2>
+						<h3>Forma Tradicional</h3>
+						<p>
+							Los temas se descargan de la pagina oficial de drupal <a href="http://drupal.org/project/themes">http://drupal.org/project/themes</a> en formato zip o tar.gz
+							<img width="700" height="350" src="img/img2.png" alt="drupal theme">
+						</p>
+					</section>
+					<section>
+						<p>Descomprime el tema en la carpeta misitio/sites/all/themes/</p>
+						<img width="700" height="350" src="img/img7.png" alt="imagen 1">
+					</section>
+					<section>
+						<p>Una vez llegado a este paso el sitio estará disponible en nuestro sitio, solo necesitas activarlo y que sea el tema por defecto</p>
+						<img width="700" height="350" src="img/img8.png" alt="img8">
+					</section>
+					<section>
+						<img src="img/img9.png" alt="img9">
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+						## Desde Drush
+
+						Drush es la linea de comandos de Drupal,mas info [aqui](https://github.com/drush-ops/drush).
+						<br>Solo necesitas ejecutar el siguiente comando:
+						
+						```
+						[marcelo@localhost misitioDrupal]$ drush dl nuevo_theme
+						```
+						Y para activarlo
+						```
+						[marcelo@localhost misitioDrupal]$ drush en -y nuevo_theme	
+						```
+					</script>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Adaptive Theme</h2>
+						<p>Mas que un tema es un framework para desarrollar subtemas en drupal.</p>
+						<h3>¿Que es un Subtema?</h3>
+						<p>Es un tema de drupal que hereda caracterizticas de temas base, podemos crear un subtema a partir de un tema 'padre' sin necesidad de alterar su funcionamiento</p>
+					</section>
+					<section>
+						<h2>Entonces.. ¿Como creamos un subtema con Adaptive Theme?</h2>
+						<p>Lo primero seria descargar el tema desde <a href="https://www.drupal.org/project/adaptivetheme" >https://www.drupal.org/project/adaptivetheme</a> ya sea mediante la forma tradicional o mediante Drush</p>
+					</section>
+					<section>
+						<img width="700" height="350" src="img/img10.png" alt="img10">
+					</section>
+					<section>
+						Una vez descargado podemos seguir la forma tradicional (Muy lento) o Mediante drush (Lo mas optimo)
+					</section>
+					<section>
+						<h2>FORMA TRADICIONAL</h2>
+						<p>Dentro la carpeta adaptivetheme se encuentra la carpeta at_core, at_admin, at_subtheme</p>
+						<img widt="700" height="350" src="img/img11.png" alt="img11">
+					</section>
+					<section>
+						<p>Copiamos la carpeta at_subtheme a la carpeta donde se encuentran nuestros temas de drupal</p>
+						<img width="700" height="350" src="img/img12.png" alt="">
+					</section>
+					<section>
+						<p>Renombramos la carpeta por el nombre que queramos asignarle a nuestro subtema</p>
+						<img width="700" height="350" src="img/img13.png" alt="">
+					</section>
+					<section>
+						<p>Dentro de la carpeta de nuestro subtema se encuentra el archivo <a href="#">adaptivetheme_subtheme.info</a> El cual tendremos que modificar como:</p>
+						<p><a href="#">nombre_subtema.info</a></p>
+						<img width="700" height="350" src="img/img14.png" alt="">
+					</section>
+					<section>
+						<p>Luego abrimos el archivo y tenemos que modificar los siguientes campos:</p>
+						<ul>
+							<li>name = El nombre que queramos darle</li>
+							<li>description = La descripcion que queramos hacer de nuestro subtema</li>
+						</ul>
+					</section>
+					<section>
+						<p>Con esto tendremos listo nuestro nuevo subtema para usarlo en nuestro sitio drupal</p>
+						<img src="img/img15.png" alt="">
+					</section>
+					<section data-markdown>
+					<script type="text/template">
+						##MEDIANTE DRUSH
+						
+						Drush te provee de un comando automaticamente para crear un subtema
+						
+						<br>
+						```
+						[marcelo@localhost misitioDrupal]$ drush adaptivetheme "Your theme name" yourthemename
+						```
+					</script>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>¿Que es Diseño Responsivo?</h2>
+						<p>Una Forma de desarrollar sitios asegurando, que el diseño está optimizado para que el formato se ajuste en relación al tamaño del dispositivo</p>
+					</section>
+					<section>
+						<h2>¿Como puedo usar AdaptiveTheme para que mi sitio sea Responsivo?</h2>
+						<p>Adaptive theme provee de hojas de estilo en cascada(css) que usaremos para modificar el tema de nuestro sitio</p>
+						<img width="700" height="350" src="img/img16.png" alt="">
+					</section>
+					<section>
+						<h2>global.base.css - global.styles.css</h2>
+						<p>Estos archivos contienen los estilos genericos que seran usados en el sitio</p>
+						<p>Cualquier estilo que sea escrito en estos archivos se cargara en el sistema en cualquier resolucion o dispositivo</p>
+					</section>
+					<section>
+						<h2>responsive.desktop.css</h2>
+						<p>Los estilos que vayamos colocando en este archivo solo se veran en dispositivos grandes como ser laptop, pc de escritorios, etc.</p>
+					</section>
+					<section>
+						<h2>responsive.smalltouch.landscape.css - responsive smalltouch.portrait.css</h2>
+						<p>Adaptive theme maneja una logica de "primero el dispositivo mas pequeño", es decir que cargara el archivo correspondiente segun a su tamaño.</p>
+						<p>Por ejemplo el archivo <a>responsive.smalltouch.landscape.css</a> se cargara en los dispositivos smartphone cuando se encuentren en posición horizontal</p>
+						<p>en cambio el archivo <a>responsive.smalltouch.portrait.css</a> se cargara en los dispositivos smartphone cuando esten en una posición vertical</p>
+					</section>
+					<section>
+						<h2>responsive.tablet.landscape.css - responsive.tablet.portrait.css</h2>
+						<p>Cuando el sitio se este visualizando desde una tablet o un smartphone de una resolución muy grande cargara estos archivos igualmente ya sea segun su posición</p>
+						<p><a>responsive.tablet.landscape.css</a> => horizontal<br><a>responsive.tablet.portrait.css</a> => vertical</p>
+					</section>
+					<section>
+						<h2>¿Si mi navegador es IE8 o IE9?</h2>
+						<p>Adaptive Theme te ofrece un archivo que puedes ir modificando para asignarle tu propia guia de estilos a internet explorer ya sea en su version 8 o 9</p>
+						<p>Internet explorer 9 => <a>lt-ie9.css</a><br>Internet explorer 8 => <a>lt-ie8.css</a></p>
+					</section>
+				</section>
+				<section>
+					<h2>¿Puedo acelerar mi proceso de desarrollo con Adaptive Theme?</h2>
+					<br>
+					<p>Como Adaptive theme utiliza <a>cascading styles sheets (css)</a></p>
+					<p>Entonces ¿Por que no usar un lenguaje precompilador que me permita escribir codigo css mas rapido?</p>
+				</section>
+				<section>
+					<section>
+						<h2>Sass (Syntactically Awesome Stylesheets)</h2>
+						<img src="img/img17.png" alt="">
+					</section>
+					<section>
+						<p>Sass es un metalenguaje pre-procesado de css, nos permite acelerar el diseño responsivo a la hora de escribir archivos css</p>
+					</section>
+					<section>
+						<h2>¿Como instalarlo?</h2>
+						<p>Sass es una "gema" de ruby asi que tenemos que instalar primero ruby en nuestras computadoras</p>
+						<p>En la pagina oficial de ruby se muestra los enlaces de descarga para diferentes sistemas operativos y su manual de instalación</p>
+						<a href="https://www.ruby-lang.org/es/downloads/">https://www.ruby-lang.org/es/downloads/</a>
+						<img width="700" height="350" src="img/img18.png" alt="">
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							Una vez instalado Ruby procedemos a instalar las gemas necesarias para utilizar sass en drupal
+							```
+								[marcelo@localhost misitioDrupal]$ sudo gem install sass
+								[marcelo@localhost misitioDrupal]$ sudo gem install zen-grids
+								[marcelo@localhost misitioDrupal]$ sudo gem install sassy-buttons
+								[marcelo@localhost misitioDrupal]$ sudo gem install compass								
+							```
+						</script>
+					</section>
+					<section data-markdown>
+							<script type="text/template">
+							Para verificar si se ha instalado bien realizamos los siguientes comandos
+							```
+								[marcelo@localhost misitioDrupal]$ cd /var/www/html/yourproject
+								[marcelo@localhost misitioDrupal]$ compass create // crea un proyecto Sass
+								[marcelo@localhost misitioDrupal]$ compass watch								
+							```
+							Si no devuelve ningun error hemos instalado Sass correctamente
+						</script>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Utilizar Sass en Adaptive theme</h2>
+						<p>Adaptive Theme ya tiene Sass incorporado en su proyecto, si queremos usar Sass en lugar de css solo debemos borrar todos los archivos <a>css</a> del tema y compilar los archivos <a>.scss</a> que es el formato de Sass</p>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							Para ello utilizamos los siguientes comandos
+							```
+								[marcelo@localhost misitioDrupal]$ compass clean // borra todos los archivos css
+								[marcelo@localhost misitioDrupal]$ compass compile // compila los archivos .scss y genera los archivos css a partir de ello
+							```
+							Ya podemos usar sass en nuestro proyecto adaptive theme.
+						</script>
+					</section>
+					<section>
+						<h2>¿Que nos provee Sass?</h2>
+						<p>Podemos Crear variable reutilizables con Sass</p>
+						<pre><code data-trim contenteditable>
+							$font-stack:    Helvetica, sans-serif;
+							$primary-color: #333;
+							body {
+  								font: 100% $font-stack;
+  								color: $primary-color;
+							}
+						</code></pre>
+					</section>
+					<section>
+						<h2>¿Que nos provee Sass?</h2>
+						<p>Podemos realizar anidamientos de css con Sass</p>
+						<pre><code data-trim contenteditable>
+						nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+						</code></pre>
+					</section>
+					<section>
+						<h2>¿Que nos provee Sass?</h2>
+						<p>Podemos realizar importaciones de archivos con Sass</p>
+						<pre><code data-trim contenteditable>
+							@import 'reset';
+
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: #efefef;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h2>¿Que nos provee Sass?</h2>
+						<p>Podemos utilizar Mixin (funciones) con Sass</p>
+						<pre><code data-trim contenteditable>
+							@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.box { @include border-radius(10px); }
+						</code></pre>
+					</section>
+					<section>
+						<h2>¿Que nos provee Sass?</h2>
+						<p>Podemos ampliar funcionalidades con @extend con Sass</p>
+						<pre><code data-trim contenteditable>
+							.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}
+
+.error {
+  @extend .message;
+  border-color: red;
+}
+
+.warning {
+  @extend .message;
+  border-color: yellow;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h2>¿Que nos provee Sass?</h2>
+						<p>Podemos usar operadores +,-,*,/ y % con Sass</p>
+						<pre><code data-trim contenteditable>
+.container { width: 100%; }
+
+article[role="main"] {
+  float: left;
+  width: 600px / 960px * 100%;
+}
+
+aside[role="complimentary"] {
+  float: right;
+  width: 300px / 960px * 100%;
+}}
+						</code></pre>
+					</section>
+				</section>
+				<section>
+					<h2>¡Gracias!</h2>
+					<p>Drupal Camp Bolivia 2014<p/>
+					<p>Christian Marcelo Tola Pacheco | <a href="https://twitter.com/cmtp_k52">@cmtp_k52</a> <a href="https://www.drupal.org/u/cmtp.k52">https://www.drupal.org/u/cmtp.k52</a></p>
+					<p>Contacto:<a>christian@koala-soft.com</a></p>
+				</section>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
